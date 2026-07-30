@@ -1,0 +1,39 @@
+﻿<Page x:Class="FinalProject.Pages.M_Accessory" Background="White"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FinalProject.Pages"
+      xmlns:localM="clr-namespace:FinalProject.Model"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="M_Accessory">
+  
+    <Grid>
+     <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition Height="0.25*" />
+     </Grid.RowDefinitions>
+
+    <ListView x:Name="lva"   FlowDirection="RightToLeft"  FontWeight="Bold"  >
+        <ListView.View  >
+            <GridView>
+                    <GridViewColumn Header="קוד אביזר" Width="90"  DisplayMemberBinding="{Binding AccessoryCode}" />
+                    <GridViewColumn Header="תאור" Width="200"  DisplayMemberBinding="{Binding Descripation }"  />
+                    <GridViewColumn Header="מחיר" Width="90"  DisplayMemberBinding="{Binding  Price }" />
+                    <GridViewColumn Header="קטגוריה"  Width="90"  DisplayMemberBinding="{Binding Category  }" />
+                    <GridViewColumn Header="תמונה" Width="90"  DisplayMemberBinding="{Binding Image }" />
+                    <GridViewColumn Header="סטטוס" Width="90" DisplayMemberBinding="{Binding Status}" />
+                </GridView>
+        </ListView.View>
+    </ListView>
+
+        <WrapPanel Grid.Row="1">
+            <Button Content="Add"  Click="AddButton"  BorderBrush="#FFBE9C6C"  Margin="20 5 5 5"    Height="30" Background="{x:Null}" BorderThickness="3"/>
+            <Button Content="Update" Click="UpdateButton" BorderBrush="#FFBE9C6C"   Height="30" Margin="5" Background="{x:Null}" BorderThickness="3"/>
+            <!--<Button Content="Cancel"  Click="CancelButton"  BorderBrush="#FFBE9C6C"  Margin="5"   Height="30" Background="{x:Null}" BorderThickness="3"/>-->
+        </WrapPanel>
+   </Grid>
+
+
+</Page>

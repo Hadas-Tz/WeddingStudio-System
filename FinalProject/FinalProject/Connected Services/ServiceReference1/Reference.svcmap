@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="702fb501-a1bd-4daa-b992-3a4a03dcddc5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/MassegeService/Service1/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="5c09287f-6002-498c-800d-d38d120dc03f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MassegeService/Service1/?xsd=xsd4" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="90f58eec-81db-48d2-82e2-cef9ceff1675" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MassegeService/Service1/?xsd=xsd1" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="62cacd73-2863-4223-af0d-906b6a4d050a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MassegeService/Service1/?xsd=xsd0" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="ef16adb2-26c7-48df-84d4-8c6d8e2c8650" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MassegeService/Service1/?xsd=xsd3" />
+    <MetadataFile FileName="item4.xsd" MetadataType="Schema" ID="99d41f74-c310-464d-8c85-2209161f39c6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MassegeService/Service1/?xsd=xsd2" />
+    <MetadataFile FileName="item5.xsd" MetadataType="Schema" ID="1f803e45-75b2-43ac-9957-cc60215225a5" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MassegeService/Service1/?xsd=xsd5" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="7009a17f-921c-45bb-9bd4-cb189693ba54" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MassegeService/Service1/?wsdl" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="0fdb198e-3719-4cc7-a5de-24ea975f318c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MassegeService/Service1/?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

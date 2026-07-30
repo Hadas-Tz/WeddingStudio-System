@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="FinalProject.Pages.C_OneFeedback" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FinalProject.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="200">
+    <UserControl.Resources>
+        <local:DoubleToIntConverter x:Key="DoubleToIntConverter"/>
+    </UserControl.Resources>
+
+
+    <Grid Background="White" >
+        
+          <Border BorderBrush="Black" BorderThickness="1">
+            <StackPanel  >
+                <hc:Rate Value="{Binding Rating, Mode=TwoWay, Converter={StaticResource DoubleToIntConverter}}"  HorizontalAlignment="Right"  Foreground="#FFBE9C6C" IsEnabled="False" IsReadOnly="True" ></hc:Rate>
+                <TextBlock Text="{Binding TextFeedback}" Height="100"  TextAlignment="Right"  Margin="7"/>
+            </StackPanel>
+          </Border>
+           
+        
+    </Grid>
+</UserControl>

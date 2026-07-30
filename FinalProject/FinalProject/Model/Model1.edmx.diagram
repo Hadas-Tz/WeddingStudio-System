@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5b96803a11bb48e48a41f596fc37fda5" Name="Diagram1">
+        <EntityTypeShape EntityType="MyDBModel.Accessory" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDBModel.Category" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDBModel.City" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDBModel.Clients" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDBModel.dress" Width="1.5" PointX="8.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDBModel.Feedback" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDBModel.OrderAccess" Width="1.5" PointX="7.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDBModel.OrderDress" Width="1.5" PointX="10.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDBModel.Orders" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDBModel.Payments" Width="1.5" PointX="7.5" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDBModel.Size" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDBModel.SizeAccess" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <AssociationConnector Association="MyDBModel.FK_Accessory_ToCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDBModel.FK_SizeAccess_ToAccess" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDBModel.FK_Clients_ToCity" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDBModel.FK_Feedback_ToClients" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDBModel.FK_Orders_ToClients" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDBModel.FK_dress_ToSize" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDBModel.FK_OrderDress_Todress" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDBModel.FK_OrderAccess_ToAccessory" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDBModel.FK_OrderAccess_ToOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDBModel.FK_OrderDress_ToOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDBModel.FK_Payments_ToOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDBModel.FK_SizeAccess_ToSize" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

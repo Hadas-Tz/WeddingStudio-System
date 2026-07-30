@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="FinalProject.Pages.C_OneDress"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FinalProject.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="150">
+    <Grid>
+        <StackPanel Background="White">
+            <Image x:Name="pc" Source="{Binding Image}" Height="150" Width="150" />
+            <TextBlock Text="{Binding Descripation}" Height="45" FlowDirection="RightToLeft" />
+        </StackPanel>  
+    </Grid>
+</UserControl>

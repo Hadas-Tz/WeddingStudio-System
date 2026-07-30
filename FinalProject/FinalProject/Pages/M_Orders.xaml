@@ -1,0 +1,54 @@
+﻿<Page x:Class="FinalProject.Pages.M_Orders"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FinalProject.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="M_Orders">
+    <Page.Resources>
+        <ResourceDictionary>
+            <local:ConvertToDate  x:Key="ctd"/>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid>
+        <Grid Background="White" >
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition />
+                <RowDefinition Height="0.25*" />
+            </Grid.RowDefinitions>
+            <WrapPanel HorizontalAlignment="Right" FlowDirection="RightToLeft">
+                <RadioButton x:Name="all" Content="הכל" FlowDirection="RightToLeft" Width="70" Margin="5" Checked="all_Checked"  />
+                <RadioButton x:Name="t" Content="פעיל" FlowDirection="RightToLeft" Width="70" Margin="5" Checked="t_Checked" />
+                <RadioButton x:Name="f" Content="לא פעיל" FlowDirection="RightToLeft" Width="70" Margin="5" Checked="f_Checked"/>
+              
+                <!--<CheckBox x:Name="t"  Content="פעיל" Checked="CheckBox_Checked" />
+                <CheckBox x:Name="f"  Content=" לא פעיל" Checked="CheckBox_Checked_1"  />-->
+            
+            </WrapPanel>
+            <ListView Grid.Row="1" x:Name="lvo"   FlowDirection="RightToLeft"  FontWeight="Bold"  >
+                <ListView.View  >
+                    <GridView>
+                        <GridViewColumn Header="קוד הזמנה" Width="120"  DisplayMemberBinding="{Binding OrderCode}" />
+                        <GridViewColumn Header="ת.ז" Width="120"  DisplayMemberBinding="{Binding Id }" />
+                        <GridViewColumn Header="תאריך אירוע" Width="120"  DisplayMemberBinding="{Binding Date.Date, Converter={StaticResource ctd} }"  />
+                        <GridViewColumn Header="סהכ לתשלום"      Width="120"  DisplayMemberBinding="{Binding Total }" />
+
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+
+            <WrapPanel Grid.Row="2">
+                <Button Content="פירוט הזמנה"  Click="AllButton"  BorderBrush="#FFBE9C6C"  Margin="20 5 5 5"   Height="30" Background="{x:Null}" BorderThickness="3"/>
+                <Button Content="Add"  Click="AddButton"  BorderBrush="#FFBE9C6C"  Margin="20 5 5 5"   Height="30" Background="{x:Null}" BorderThickness="3"/>
+                <Button Content="Update" Click="UpdateButton" BorderBrush="#FFBE9C6C"   Margin="5"    Height="30" Background="{x:Null}" BorderThickness="3"/>
+
+                <!--<Button Content="Cancel"  Click="CancelButton"  BorderBrush="#FFBE9C6C"  Margin="5"   Height="30" Background="{x:Null}" BorderThickness="3"/>-->
+            </WrapPanel>
+        </Grid>
+    </Grid>
+</Page>
